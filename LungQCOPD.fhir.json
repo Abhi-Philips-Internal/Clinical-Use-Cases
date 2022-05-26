@@ -1,0 +1,1180 @@
+{
+    "resourceType":"Patient",
+    "name": [
+        {
+            "use": "official",
+            "given": ["COPD"],
+            "family": "Gleamer"
+        }
+    ],
+    "gender": "male",
+    "birthDate": "0000-00-00"
+},
+{
+    "resourceType":"ImagingStudy",
+    "id": "scantype",
+    "identifier": [
+        {
+            "system": "",
+            "value": ""
+        }
+    ],
+    "modality": [
+        {
+            "system": "http://dicom.nema.org/resources/ontology/DCM",
+            "code": "CT"
+        }
+    ],
+    "text": "scantype: aspiration"
+}
+{
+    "resourceType": "BodyStructure",
+    "id": "Lung",
+    "identifier": [
+        {
+         "system": "http://philips.com/integrated-diagnostics/lungq_covid19",
+         "value": "12345"
+        }
+    ],
+    "location": {
+        "coding": [
+            {
+             "system": "http://snomed.info/sct",
+             "code": "39607008",
+             "display": "Entire lung structure (body structure)"
+            }
+        ]
+    }
+},
+{
+    "resourceType":"BodyStructure",
+   "id": "RUL",
+   "identifier": [
+       {
+        "system": "http://philips.com/integrated-diagnostics/lungq_covid19",
+        "value": "12345"
+       }
+   ],
+   "location": {
+       "coding": [
+           {
+            "system": "http://snomed.info/sct",
+            "code": "361969002",
+            "display": "Entire right upper lobe of lung (body structure)"
+           }
+       ], 
+       "text": "RUL: Right Upper Lobe"
+   }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "RML",
+    "identifier": [
+        {
+         "system": "http://philips.com/integrated-diagnostics/lungq_covid19",
+         "value": "12345"
+        }
+    ],
+    "location": {
+        "coding": [
+            {
+             "system": "http://snomed.info/sct",
+             "code": "361973004",
+             "display": "Entire middle lobe of right lung (body structure)"
+            }
+        ], 
+        "text": "RML: Right Middle Lobe"
+    } 
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "RLL",
+    "identifier": [
+        {
+         "system": "http://philips.com/integrated-diagnostics/lungq_covid19",
+         "value": "12345"
+        }
+    ],
+    "location": {
+        "coding": [
+            {
+             "system": "http://snomed.info/sct",
+             "code": "361976007",
+             "display": "Right lower lobe of lung (body structure)"
+            }
+        ], 
+        "text": "RLL: Right Lower Lobe"
+    } 
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "LUL",
+    "identifier": [
+        {
+         "system": "http://philips.com/integrated-diagnostics/lungq_covid19",
+         "value": "12345"
+        }
+    ],
+    "location": {
+        "coding": [
+            {
+             "system": "http://snomed.info/sct",
+             "code": "361984006",
+             "display": "Entire upper lobe of left lung (body structure)"
+            }
+        ], 
+        "text": "LUL: Left Upper Lobe"
+    } 
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "LLL",
+    "identifier": [
+        {
+         "system": "http://philips.com/integrated-diagnostics/lungq_covid19",
+         "value": "12345"
+        }
+    ],
+    "location": {
+        "coding": [
+            {
+             "system": "http://snomed.info/sct",
+             "code": "361989001",
+             "display": "Entire lower lobe of left lung (body structure)"
+            }
+        ], 
+        "text": "LLL: Left Lower Lobe"
+    } 
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final",
+        "focus": [{
+            "reference": "BodyStructure/Lung"
+        }],
+        "category": [
+            {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                        "code": "Overall_CT_Assessment",
+                        "display": "Overall CT Assessment"
+                    }
+                ],
+                "text": "Overall CT Assessment"
+            }
+        ],
+        "code":{
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "Total Lung Capacity",
+                    "display": "Total Lung Capacity (L)"
+                }
+            ],
+            "text": "Total Lung Capacity (L)"
+        },
+        "subject": {
+            "reference": "Patient/COVID19 Gleamer"
+        },
+        "effectiveDateTime": "20xx-xx-xx",
+        "valueQuantity": {
+            "value": 3.1,
+            "unit": "L",
+            "system": "http://unitofmeasure.org",
+            "code": "L"
+        }
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final",
+        "focus": [{
+            "reference": "BodyStructure/Lung"
+        }],
+        "category": [
+            {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                        "code": "Overall_CT_Assessment",
+                        "display": "Overall CT Assessment"
+                    }
+                ],
+                "text": "Overall CT Assessment"
+            }
+        ],
+        "code":{
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "Emphysema(a)",
+                    "display": "Emphysema(a) (%)"
+                }
+            ],
+            "text": "Emphysema (a: Emphysema scores normalized) (%)"
+        },
+        "subject": {
+            "reference": "Patient/COVID19 Gleamer"
+        },
+        "effectiveDateTime": "20xx-xx-xx",
+        "valueQuantity": {
+            "value": 0,
+            "unit": "%",
+            "system": "http://unitofmeasure.org",
+            "code": "%"
+        }
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final",
+        "focus": [{
+            "reference": "BodyStructure/RUL",
+            "display": "RUL (Right Upper Lobe)"
+        }],
+        "category": [
+            {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                        "code": "Lobar_CT_Assessment",
+                        "display": "Lobar CT Assessment"
+                    }
+                ],
+                "text": "Lobar CT Assessment"
+            }
+        ],
+        "code":{
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "Lobe_Volume",
+                    "display": "Lobe Volume"
+                }
+            ],
+            "text": "Lobe Volume"
+        },
+        "subject": {
+            "reference": "Patient/COVID19 Gleamer"
+        },
+        "effectiveDateTime": "20xx-xx-xx",
+        "valueQuantity": {
+            "value": 679,
+            "unit": "ml",
+            "system": "http://unitofmeasure.org",
+            "code": "ml"
+        }
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final",
+        "focus": [{
+            "reference": "BodyStructure/RUL",
+            "display": "RML (Right Middle Lobe)"
+        }],
+        "category": [
+            {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                        "code": "Lobar_CT_Assessment",
+                        "display": "Lobar CT Assessment"
+                    }
+                ],
+                "text": "Lobar CT Assessment"
+            }
+        ],
+        "code":{
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "Lobe_Volume",
+                    "display": "Lobe Volume"
+                }
+            ],
+            "text": "Lobe Volume"
+        },
+        "subject": {
+            "reference": "Patient/COVID19 Gleamer"
+        },
+        "effectiveDateTime": "20xx-xx-xx",
+        "valueQuantity": {
+            "value": 296,
+            "unit": "ml",
+            "system": "http://unitofmeasure.org",
+            "code": "ml"
+        }
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final",
+        "focus": [{
+            "reference": "BodyStructure/RUL",
+            "display": "RLL (Right Lower Lobe)"
+        }],
+        "category": [
+            {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                        "code": "Lobar_CT_Assessment",
+                        "display": "Lobar CT Assessment"
+                    }
+                ],
+                "text": "Lobar CT Assessment"
+            }
+        ],
+        "code":{
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "Lobe_Volume",
+                    "display": "Lobe Volume"
+                }
+            ],
+            "text": "Lobe Volume"
+        },
+        "subject": {
+            "reference": "Patient/COVID19 Gleamer"
+        },
+        "effectiveDateTime": "20xx-xx-xx",
+        "valueQuantity": {
+            "value": 683,
+            "unit": "ml",
+            "system": "http://unitofmeasure.org",
+            "code": "ml"
+        }
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final",
+        "focus": [{
+            "reference": "BodyStructure/RUL",
+            "display": "LUL (Left Upper Lobe)"
+        }],
+        "category": [
+            {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                        "code": "Lobar_CT_Assessment",
+                        "display": "Lobar CT Assessment"
+                    }
+                ],
+                "text": "Lobar CT Assessment"
+            }
+        ],
+        "code":{
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "Lobe_Volume",
+                    "display": "Lobe Volume"
+                }
+            ],
+            "text": "Lobe Volume"
+        },
+        "subject": {
+            "reference": "Patient/COVID19 Gleamer"
+        },
+        "effectiveDateTime": "20xx-xx-xx",
+        "valueQuantity": {
+            "value": 855,
+            "unit": "ml",
+            "system": "http://unitofmeasure.org",
+            "code": "ml"
+        }
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final",
+        "focus": [{
+            "reference": "BodyStructure/RUL",
+            "display": "LLL (Left Lower Lobe)"
+        }],
+        "category": [
+            {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                        "code": "Lobar_CT_Assessment",
+                        "display": "Lobar CT Assessment"
+                    }
+                ],
+                "text": "Lobar CT Assessment"
+            }
+        ],
+        "code":{
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "Lobe_Volume",
+                    "display": "Lobe Volume"
+                }
+            ],
+            "text": "Lobe Volume"
+        },
+        "subject": {
+            "reference": "Patient/COVID19 Gleamer"
+        },
+       "effectiveDateTime": "20xx-xx-xx",
+        "valueQuantity": {
+            "value": 582,
+            "unit": "ml",
+            "system": "http://unitofmeasure.org",
+            "code": "ml"
+        }
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final",
+        "focus": [{
+            "reference": "BodyStructure/RUL",
+            "display": "RUL (Right Upper Lobe)"
+        }],
+        "category": [
+            {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                        "code": "Lobar_CT_Assessment",
+                        "display": "Lobar CT Assessment"
+                    }
+                ],
+                "text": "Lobar CT Assessment"
+            }
+        ],
+        "code":{
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "Emphysema_Normalized",
+                    "display": "Emphysema Normalized"
+                }
+            ],
+            "text": "Emphysema Normalized (%)"
+        },
+        "subject": {
+            "reference": "Patient/COVID19 Gleamer"
+        },
+        "effectiveDateTime": "20xx-xx-xx",
+        "valueQuantity": {
+            "value": 0,
+            "unit": "%",
+            "system": "http://unitofmeasure.org",
+            "code": "%"
+        }        
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final",
+        "focus": [{
+            "reference": "BodyStructure/RML",
+            "display": "RML (Right Middle Lobe)"
+        }],
+        "category": [
+            {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                        "code": "Lobar_CT_Assessment",
+                        "display": "Lobar CT Assessment"
+                    }
+                ],
+                "text": "Lobar CT Assessment"
+            }
+        ],
+        "code":{
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "Emphysema_Normalized",
+                    "display": "Emphysema Normalized"
+                }
+            ],
+            "text": "Emphysema Normalized (%)"
+        },
+        "subject": {
+            "reference": "Patient/COVID19 Gleamer"
+        },
+        "effectiveDateTime": "20xx-xx-xx",
+        "valueQuantity": {
+            "value": 0.1,
+            "unit": "%",
+            "system": "http://unitofmeasure.org",
+            "code": "%"
+        }        
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final",
+        "focus": [{
+            "reference": "BodyStructure/RLL",
+            "display": "RLL (Right Lower Lobe)"
+        }],
+        "category": [
+            {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                        "code": "Lobar_CT_Assessment",
+                        "display": "Lobar CT Assessment"
+                    }
+                ],
+                "text": "Lobar CT Assessment"
+            }
+        ],
+        "code":{
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "Emphysema_Normalized",
+                    "display": "Emphysema Normalized"
+                }
+            ],
+            "text": "Emphysema Normalized (%)"
+        },
+        "subject": {
+            "reference": "Patient/COVID19 Gleamer"
+        },
+        "effectiveDateTime": "20xx-xx-xx",
+        "valueQuantity": {
+            "value": 0,
+            "unit": "%",
+            "system": "http://unitofmeasure.org",
+            "code": "%"
+        }        
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final",
+        "focus": [{
+            "reference": "BodyStructure/LUL",
+            "display": "LUL (Left Upper Lobe)"
+        }],
+        "category": [
+            {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                        "code": "Lobar_CT_Assessment",
+                        "display": "Lobar CT Assessment"
+                    }
+                ],
+                "text": "Lobar CT Assessment"
+            }
+        ],
+        "code":{
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "Emphysema_Normalized",
+                    "display": "Emphysema Normalized"
+                }
+            ],
+            "text": "Emphysema Normalized (%)"
+        },
+        "subject": {
+            "reference": "Patient/COVID19 Gleamer"
+        },
+        "effectiveDateTime": "20xx-xx-xx",
+        "valueQuantity": {
+            "value": 0,
+            "unit": "%",
+            "system": "http://unitofmeasure.org",
+            "code": "%"
+        }        
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final",
+        "focus": [{
+            "reference": "BodyStructure/LLL",
+            "display": "LLL (Left Lower Lobe)"
+        }],
+        "category": [
+            {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                        "code": "Lobar_CT_Assessment",
+                        "display": "Lobar CT Assessment"
+                    }
+                ],
+                "text": "Lobar CT Assessment"
+            }
+        ],
+        "code":{
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "Emphysema_Normalized",
+                    "display": "Emphysema Normalized"
+                }
+            ],
+            "text": "Emphysema Normalized (%)"
+        },
+        "subject": {
+            "reference": "Patient/COVID19 Gleamer"
+        },
+        "effectiveDateTime": "20xx-xx-xx",
+        "valueQuantity": {
+            "value": 0,
+            "unit": "%",
+            "system": "http://unitofmeasure.org",
+            "code": "%"
+        }        
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final",
+        "focus": [{
+            "reference": "BodyStructure/RUL",
+            "display": "RUL (Right Upper Lobe)"
+        }],
+        "category": [
+            {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                        "code": "Lobar_CT_Assessment",
+                        "display": "Lobar CT Assessment"
+                    }
+                ],
+                "text": "Lobar CT Assessment"
+            }
+        ],
+        "code":{
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "Emphysema_Raw",
+                    "display": "Emphysema Raw"
+                }
+            ],
+            "text": "Emphysema Raw (%)"
+        },
+        "subject": {
+            "reference": "Patient/COVID19 Gleamer"
+        },
+        "effectiveDateTime": "20xx-xx-xx",
+        "valueQuantity": {
+            "value": 11.3,
+            "unit": "%",
+            "system": "http://unitofmeasure.org",
+            "code": "%"
+        }        
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final",
+        "focus": [{
+            "reference": "BodyStructure/RML",
+            "display": "RML (Right Middle Lobe)"
+        }],
+        "category": [
+            {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                        "code": "Lobar_CT_Assessment",
+                        "display": "Lobar CT Assessment"
+                    }
+                ],
+                "text": "Lobar CT Assessment"
+            }
+        ],
+        "code":{
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "Emphysema_Raw",
+                    "display": "Emphysema Raw"
+                }
+            ],
+            "text": "Emphysema Raw (%)"
+        },
+        "subject": {
+            "reference": "Patient/COVID19 Gleamer"
+        },
+        "effectiveDateTime": "20xx-xx-xx",
+        "valueQuantity": {
+            "value": 18.4,
+            "unit": "%",
+            "system": "http://unitofmeasure.org",
+            "code": "%"
+        }        
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final",
+        "focus": [{
+            "reference": "BodyStructure/RLL",
+            "display": "RLL (Right Lower Lobe)"
+        }],
+        "category": [
+            {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                        "code": "Lobar_CT_Assessment",
+                        "display": "Lobar CT Assessment"
+                    }
+                ],
+                "text": "Lobar CT Assessment"
+            }
+        ],
+        "code":{
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "Emphysema_Raw",
+                    "display": "Emphysema Raw"
+                }
+            ],
+            "text": "Emphysema Raw (%)"
+        },
+        "subject": {
+            "reference": "Patient/COVID19 Gleamer"
+        },
+        "effectiveDateTime": "20xx-xx-xx",
+        "valueQuantity": {
+            "value": 12.7,
+            "unit": "%",
+            "system": "http://unitofmeasure.org",
+            "code": "%"
+        }        
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final",
+        "focus": [{
+            "reference": "BodyStructure/LUL",
+            "display": "LUL (Left Upper Lobe)"
+        }],
+        "category": [
+            {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                        "code": "Lobar_CT_Assessment",
+                        "display": "Lobar CT Assessment"
+                    }
+                ],
+                "text": "Lobar CT Assessment"
+            }
+        ],
+        "code":{
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "Emphysema_Raw",
+                    "display": "Emphysema Raw"
+                }
+            ],
+            "text": "Emphysema Raw (%)"
+        },
+        "subject": {
+            "reference": "Patient/COVID19 Gleamer"
+        },
+        "effectiveDateTime": "20xx-xx-xx",
+        "valueQuantity": {
+            "value": 15.7,
+            "unit": "%",
+            "system": "http://unitofmeasure.org",
+            "code": "%"
+        }        
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final",
+        "focus": [{
+            "reference": "BodyStructure/LLL",
+            "display": "LLL (Left Lower Lobe)"
+        }],
+        "category": [
+            {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                        "code": "Lobar_CT_Assessment",
+                        "display": "Lobar CT Assessment"
+                    }
+                ],
+                "text": "Lobar CT Assessment"
+            }
+        ],
+        "code":{
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "Emphysema_Raw",
+                    "display": "Emphysema Raw"
+                }
+            ],
+            "text": "Emphysema Raw (%)"
+        },
+        "subject": {
+            "reference": "Patient/COVID19 Gleamer"
+        },
+        "effectiveDateTime": "20xx-xx-xx",
+        "valueQuantity": {
+            "value": 13.3,
+            "unit": "%",
+            "system": "http://unitofmeasure.org",
+            "code": "%"
+        }        
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final",
+        "focus": [{
+            "reference": "BodyStructure/RUL",
+            "display": "RUL (Right Upper Lobe)"
+        }],
+        "category": [
+            {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                        "code": "Lobar_CT_Assessment",
+                        "display": "Lobar CT Assessment"
+                    }
+                ],
+                "text": "Lobar CT Assessment"
+            }
+        ],
+        "code":{
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "Fissure_Completeness",
+                    "display": "Fissure Completeness"
+                }
+            ],
+            "text": "Fissure Completeness (%)"
+        },
+        "subject": {
+            "reference": "Patient/COVID19 Gleamer"
+        },
+        "effectiveDateTime": "20xx-xx-xx",
+        "valueQuantity": {
+            "value": 65.6,
+            "unit": "%",
+            "system": "http://unitofmeasure.org",
+            "code": "%"
+        }        
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final",
+        "focus": [{
+            "reference": "BodyStructure/RML",
+            "display": "RML (Right Middle Lobe)"
+        }],
+        "category": [
+            {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                        "code": "Lobar_CT_Assessment",
+                        "display": "Lobar CT Assessment"
+                    }
+                ],
+                "text": "Lobar CT Assessment"
+            }
+        ],
+        "code":{
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "Fissure_Completeness",
+                    "display": "Fissure Completeness"
+                }
+            ],
+            "text": "Fissure Completeness (%)"
+        },
+        "subject": {
+            "reference": "Patient/COVID19 Gleamer"
+        },
+        "effectiveDateTime": "20xx-xx-xx",
+        "valueQuantity": {
+            "value": 74.4,
+            "unit": "%",
+            "system": "http://unitofmeasure.org",
+            "code": "%"
+        }        
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final",
+        "focus": [{
+            "reference": "BodyStructure/RLL",
+            "display": "RLL (Right Lower Lobe)"
+        }],
+        "category": [
+            {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                        "code": "Lobar_CT_Assessment",
+                        "display": "Lobar CT Assessment"
+                    }
+                ],
+                "text": "Lobar CT Assessment"
+            }
+        ],
+        "code":{
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "Fissure_Completeness",
+                    "display": "Fissure Completeness"
+                }
+            ],
+            "text": "Fissure Completeness (%)"
+        },
+        "subject": {
+            "reference": "Patient/COVID19 Gleamer"
+        },
+        "effectiveDateTime": "20xx-xx-xx",
+        "valueQuantity": {
+            "value": 91.3,
+            "unit": "%",
+            "system": "http://unitofmeasure.org",
+            "code": "%"
+        }        
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final",
+        "focus": [{
+            "reference": "BodyStructure/LUL",
+            "display": "LUL (Left Upper Lobe)"
+        }],
+        "category": [
+            {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                        "code": "Lobar_CT_Assessment",
+                        "display": "Lobar CT Assessment"
+                    }
+                ],
+                "text": "Lobar CT Assessment"
+            }
+        ],
+        "code":{
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "Fissure_Completeness",
+                    "display": "Fissure Completeness"
+                }
+            ],
+            "text": "Fissure Completeness (%)"
+        },
+        "subject": {
+            "reference": "Patient/COVID19 Gleamer"
+        },
+        "effectiveDateTime": "20xx-xx-xx",
+        "valueQuantity": {
+            "value": 94.6,
+            "unit": "%",
+            "system": "http://unitofmeasure.org",
+            "code": "%"
+        }        
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final",
+        "focus": [{
+            "reference": "BodyStructure/LLL",
+            "display": "LLL (Left Lower Lobe)"
+        }],
+        "category": [
+            {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                        "code": "Lobar_CT_Assessment",
+                        "display": "Lobar CT Assessment"
+                    }
+                ],
+                "text": "Lobar CT Assessment"
+            }
+        ],
+        "code":{
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "Fissure_Completeness",
+                    "display": "Fissure Completeness"
+                }
+            ],
+            "text": "Fissure Completeness (%)"
+        },
+        "subject": {
+            "reference": "Patient/COVID19 Gleamer"
+        },
+        "effectiveDateTime": "20xx-xx-xx",
+        "valueQuantity": {
+            "value": 94.6,
+            "unit": "%",
+            "system": "http://unitofmeasure.org",
+            "code": "%"
+        }        
+    }
+},
