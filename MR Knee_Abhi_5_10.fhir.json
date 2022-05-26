@@ -1,0 +1,1127 @@
+{
+    "resourceType":"BodyStructure",
+    "id": "knee",
+    "identifier": [
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "location": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "182204005",
+                "display": "Entire knee joint (body structure)"
+            }
+        ],
+        "text": "knee"
+    }
+},
+{
+    "resourceType": "BodyStructure", 
+    "id": "MedialCompartmentKnee",
+    "identifier": [
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "location": {
+        "coding": [
+            {
+                "system":"http://snomed.info/sct",
+                "code": "244552003",
+                "display": "Medial Compartment of the Knee"
+            }
+        ],
+        "text": "Medial compartment:"
+    }
+},
+{
+    "resourceType": "BodyStructure", 
+    "id": "MedialMeniscusDegeneration",
+    "identifier": [
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "33359002",
+                "display": "Degeneration (morphologic abnormality)"
+            }
+        ],
+        "text": "Medial Meniscus Degeneration"
+    },
+    "location":{
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "49390008",
+                "display": "Medial meniscus structure (body structure)"
+            }
+        ],
+        "text": "Medial Meniscus"
+    }
+},
+{
+    "resourceType": "BodyStructure", 
+    "id": "LateralCompartmentKnee",
+    "identifier": [
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "location": {
+        "coding": [
+            {
+                "system":"http://snomed.info/sct",
+                "code": "244553008",
+                "display": "Lateral Compartment of the Knee"
+            }
+        ],
+        "text": "Lateral compartment:"
+    }
+},
+{
+    "resourceType": "BodyStructure", 
+    "id": "ExternalMeniscusDegeneration",
+    "identifier": [
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "313294001",
+                "display": "Degeneration of lateral meniscus (disorder)"
+            }
+        ],
+        "text": "External Meniscus Degeneration"
+    },
+    "location":{
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "10013000",
+                "display": "Lateral meniscus structure (body structure)"
+            }
+        ],
+        "text": "External Meniscus"
+    }
+},
+{
+    "resourceType": "BodyStructure", 
+    "id": "FemeropatellarcompartmentKnee",
+    "identifier": [
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "location": {
+        "coding": [
+            {
+                "system":"http://snomed.info/sct",
+                "code": " ",
+                "display": "Femeropatellar Compartment of the Knee"
+            }
+        ],
+        "text": "Femeropatellar compartment:"
+    }
+},
+{
+    "resourceType": "BodyStructure", 
+    "id": "RetropatellarChondropathy",
+    "identifier": [
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "36071006",
+                "display": "Chondromalacia of patella (disorder)"
+            }
+        ],
+        "text": "Retropatellar Chondropathy"
+    },
+    "location":{
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "64234005",
+                "display": "Bone structure of patella (body structure)"
+            }
+        ],
+        "text": "Patella"
+    }
+},
+{
+    "resourceType": "BodyStructure", 
+    "id": "RetinaculumRupture",
+    "identifier": [
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "125671007",
+                "display": "Rupture (morphologic abnormality)"
+            }
+        ],
+        "text": "Rupture"
+    },
+    "location":{
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "245928007",
+                "display": "Structure of patellar retinaculum (body structure)"
+            }
+        ],
+        "text": "Retinaculum"
+    }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "Osteochodrosisdissecans",
+    "identifier":[
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology": {
+        "coding":[
+            {
+                "system":"http://snomed.info/sct", 
+                "code": "82562007",
+                "display": "Osteochondritis dissecans (disorder)"
+            }
+        ],
+        "text": "Osteochodrosis dissecans"
+    },
+    "location":{
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "",
+                "display": "Femoropatellar Compartment"
+            }
+        ],
+        "text": "Femoropatellar Compartment"
+    }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "Bands: Cruciate and Collateral ligaments of knee joint",
+    "identifier":[
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology": {
+        "coding":[
+            {
+                "system":"http://snomed.info/sct", 
+                "code": "68010000",
+                "display": "Structure of ligament of knee joint (body structure)"
+            }
+        ],
+        "text": "Bands: Cruciate and Collateral ligaments of knee joint"
+    }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "Anterior Cruciate ligament (ACL)",
+    "identifier":[
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology": {
+        "coding":[
+            {
+                "system":"http://snomed.info/sct", 
+                "code": "209520004",
+                "display": "Partial tear, knee, anterior cruciate ligament"
+            }
+        ],
+        "text": "Partial rupture"
+    },
+    "location":{
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "895007",
+                "display": "Structure of anterior cruciate ligament of knee joint (body structure)"
+            }
+        ],
+        "text": "Anterior Cruciate Ligament (ACL)"
+    }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "Posterior Cruciate ligament (ACL)",
+    "identifier":[
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology": {
+        "coding":[
+            {
+                "system":"http://snomed.info/sct", 
+                "code": "239727002",
+                "display": "Rupture of posterior cruciate ligament (disorder)"
+            }
+        ],
+        "text": "Rupture"
+    },
+    "location":{
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "16219000",
+                "display": "Structure of posterior cruciate ligament of knee joint (body structure)"
+            }
+        ],
+        "text": "Posterior Cruciate Ligament (ACL)"
+    }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "Collateral Ligaments",
+    "identifier":[
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "location":{
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "245935004",
+                "display": "Structure of collateral ligament of knee joint (body structure)"
+            }
+        ],
+        "text": "Collateral Ligaments (AT)"
+    }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "Lateral collateral ligaments",
+    "identifier":[
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology": {
+        "coding":[
+            {
+                "system":"http://snomed.info/sct", 
+                "code": "444468005",
+                "display": "Injury of lateral collateral ligament of knee (disorder)"
+            }
+        ],
+        "text": "Distortion (grade 1)"
+    },
+    "location":{
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "39959004",
+                "display": "Structure of lateral collateral ligament of knee joint (body structure)"
+            }
+        ],
+        "text": "Lateral Collateral Ligaments"
+    }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "Medial collateral ligaments (grade 2)",
+    "identifier":[
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology": {
+        "coding":[
+            {
+                "system":"http://snomed.info/sct", 
+                "code": "209519005",
+                "display": "Partial tear, knee, medial collateral ligament (disorder)"
+            }
+        ],
+        "text": "Partial rupture (grade 2)"
+    },
+    "location":{
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "1627004",
+                "display": "Structure of medial collateral ligament of knee joint (body structure)"
+            }
+        ],
+        "text": "Medial Collateral Ligaments"
+    }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "Tendon of quadriceps muscle",
+    "identifier":[
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology": {
+        "coding":[
+            {
+                "system":"http://snomed.info/sct", 
+                "code": "6849006",
+                "display": "Rupture of quadriceps tendon (disorder)"
+            }
+        ],
+        "text": "Partial Rupture"
+    },
+    "location":{
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "70567001",
+                "display": "Structure of quadriceps tendon (body structure)"
+            }
+        ],
+        "text": "tendon of the quadriceps muscle femoris"
+    }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "Tendon of biceps muscle",
+    "identifier":[
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology": {
+        "coding":[
+            {
+                "system":"http://snomed.info/sct", 
+                "code": "209779002",
+                "display": "Rupture of hamstring tendon (disorder)"
+            }
+        ],
+        "text": "Complete Rupture"
+    },
+    "location":{
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "128508006",
+                "display": "Structure of tendon of biceps femoris (body structure)"
+            }
+        ],
+        "text": "tendon of biceps muscle"
+    }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "Patellar tendon",
+    "identifier":[
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology": {
+        "coding":[
+            {
+                "system":"http://snomed.info/sct", 
+                "code": "39547005",
+                "display": "Enthesopathy of knee (disorder)"
+            }
+        ],
+        "text": "Enthesopathy"
+    },
+    "location":{
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "18033002",
+                "display": "Structure of patellar ligament (body structure)"
+            }
+        ],
+        "text": "Patellar Tendon"
+    }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "Musculus Popliteus",
+    "identifier":[
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "location":{
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "15591009",
+                "display": "Popliteus muscle structure (body structure)"
+            }
+        ],
+        "text": "Musculus Popliteus"
+    }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "Hoffa Fat Body (edema)",
+    "identifier":[
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology": {
+        "coding":[
+            {
+                "system":"http://snomed.info/sct", 
+                "code": "79654002",
+                "display": "Edema (morphologic abnormality)"
+            }
+        ],
+        "text": "Edema"
+    },
+    "location":{
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "282128003",
+                "display": "Entire infrapatellar fat pad (body structure)"
+            }
+        ],
+        "text": "Hoffa Fat Body (WT)"
+    }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "Hoffa Fat Body (hypertrophy)",
+    "identifier":[
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology": {
+        "coding":[
+            {
+                "system":"http://snomed.info/sct", 
+                "code": "72894001",
+                "display": "Hypertrophy of fat pad of knee (disorder)"
+            }
+        ],
+        "text": "Hypertrophy of the Hoffa body"
+    },
+    "location":{
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "282128003",
+                "display": "Entire infrapatellar fat pad (body structure)"
+            }
+        ],
+        "text": "Hoffa Fat Body (WT)"
+    }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "Hoffa Fat Body (rupture)",
+    "identifier":[
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology": {
+        "coding":[
+            {
+                "system":"http://snomed.info/sct", 
+                "code": "125671007",
+                "display": "Rupture (morphologic abnormality)"
+            }
+        ],
+        "text": "Rupture"
+    },
+    "location":{
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "282128003",
+                "display": "Entire infrapatellar fat pad (body structure)"
+            }
+        ],
+        "text": "Hoffa Fat Body (WT)"
+    }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "Hoffa Fat Body (Cyclops lesion)",
+    "identifier":[
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology": {
+        "coding":[
+            {
+                "system":"http://snomed.info/sct", 
+                "code": "",
+                "display": ""
+            }
+        ],
+        "text": "Cyclops lesion"
+    },
+    "location":{
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "282128003",
+                "display": "Entire infrapatellar fat pad (body structure)"
+            }
+        ],
+        "text": "Hoffa Fat Body (WT)"
+    }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "Joint Effusion (slight)",
+    "identifier":[
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology": {
+        "coding":[
+            {
+                "system":"http://snomed.info/sct", 
+                "code": "202381003",
+                "display": "Knee joint effusion (disorder)"
+            }
+        ],
+        "text": "Slight joint effusion with a Baker's cyst"
+    },
+    "location":{
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "49076000",
+                "display": "Knee joint structure (body structure)"
+            }
+        ]
+    }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "Joint Effusion (empyema)",
+    "identifier":[
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology": {
+        "coding":[
+            {
+                "system": "http://snomed.info/sct",
+                "code": "66696003",
+                "display": "Empyema (morphologic abnormality)"
+            }
+        ],
+        "text": "Joint effusion with clear joint effusion likely corresponding to empyema"
+    },
+    "morphology": {
+        "coding":[
+            {
+                "system":"http://snomed.info/sct", 
+                "code": "202381003",
+                "display": "Knee joint effusion (disorder)"
+            }
+        ],
+        "text": "Joint effusion with clear joint effusion likely corresponding to empyema"
+    },
+    "location":{
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "49076000",
+                "display": "Knee joint structure (body structure)"
+            }
+        ]
+    }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "Joint Effusion (blood clots)",
+    "identifier":[
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology": {
+        "coding":[
+            {
+                "system": "http://snomed.info/sct",
+                "code": "75753009",
+                "display": "Blood clot (morphologic abnormality)"
+            }
+        ],
+        "text": "Joint effusion with blood clots detectable"
+    },
+    "morphology": {
+        "coding":[
+            {
+                "system":"http://snomed.info/sct", 
+                "code": "202381003",
+                "display": "Knee joint effusion (disorder)"
+            }
+        ],
+        "text": "Joint effusion with blood clots detectable"
+    },
+    "location":{
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "49076000",
+                "display": "Knee joint structure (body structure)"
+            }
+        ]
+    }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "Biceps Femoris Muscle (hematoma)",
+    "identifier":[
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology": {
+        "coding":[
+            {
+                "system": "http://snomed.info/sct",
+                "code": "262969000",
+                "display": "Intramuscular hematoma (disorder)"
+            }
+        ],
+        "text": "Visualization of an intramuscular hematoma."
+    },
+    "location":{
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "89241006",
+                "display": "Biceps femoris muscle structure (body structure)"
+            }
+        ],
+        "text": "Biceps femoris muscle"
+    }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "Popliteus Muscle (muscle strain)",
+    "identifier":[
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology": {
+        "coding":[
+            {
+                "system": "http://snomed.info/sct",
+                "code": "48532005",
+                "display": "Muscle strain (disorder)"
+            }
+        ],
+        "text": "muscle strain (type 2)"
+    },
+    "location":{
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "15591009",
+                "display": "Popliteus muscle structure (body structure)"
+            }
+        ],
+        "text": "Popliteus muscle"
+    }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "Quadriceps femoris muscle (muscle fiber tear type 3a)",
+    "identifier":[
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology": {
+        "coding":[
+            {
+                "system": "http://snomed.info/sct",
+                "code": "262966007",
+                "display": "Muscle tear"
+            }
+        ],
+        "text": "a muscle fiber tear (type 3a) can be visualized"
+    },
+    "location":{
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "21989003",
+                "display": "Structure of quadriceps femoris muscle (body structure)"
+            }
+        ],
+        "text": "Quadriceps femoris muscle"
+    }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "Satorius muscle (muscle tear type 3b)",
+    "identifier":[
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology": {
+        "coding":[
+            {
+                "system": "http://snomed.info/sct",
+                "code": "262966007",
+                "display": "Muscle tear"
+            }
+        ],
+        "text": "a muscle tear appears (type 3B)"
+    },
+    "location":{
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "12595009",
+                "display": "Structure of sartorius muscle (body structure)"
+            }
+        ],
+        "text": "Sartorius muscle"
+    }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "Gastrocnemius muscle (muscle & tendon tear type 4)",
+    "identifier":[
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology": {
+        "coding":[
+            {
+                "system": "http://snomed.info/sct",
+                "code": "312847008",
+                "display": "Muscle and tendon injury (disorder)"
+            }
+        ],
+        "text": "shows visible muscle tear / tendon tear (type 4)"
+    },
+    "location":{
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "35616000",
+                "display": "Gastrocnemius muscle structure (body structure)"
+            }
+        ],
+        "text": "Gastrocnemius muscle"
+    }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "Tumor (Hemangioma)",
+    "identifier":[
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology": {
+        "coding":[
+            {
+                "system": "http://snomed.info/sct",
+                "code": "400210000",
+                "display": "Hemangioma (disorder)"
+            }
+        ],
+        "text": "Hemangioma"
+    }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "Tumor (Lipoma)",
+    "identifier":[
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology": {
+        "coding":[
+            {
+                "system": "http://snomed.info/sct",
+                "code": "134328007",
+                "display": "Lipoma morphology (morphologic abnormality)"
+            }
+        ],
+        "text": "Lipoma"
+    }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "Tumor (Ganglion)",
+    "identifier":[
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology": {
+        "coding":[
+            {
+                "system": "http://snomed.info/sct",
+                "code": "",
+                "display": ""
+            }
+        ],
+        "text": "Ganglion"
+    }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "Tumor (Neurinom)",
+    "identifier":[
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology": {
+        "coding":[
+            {
+                "system": "http://snomed.info/sct",
+                "code": "1163436007",
+                "display": "Neuroma (morphologic abnormality)"
+            }
+        ],
+        "text": "Neurinom"
+    }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "Tumor (Epidermoid)",
+    "identifier":[
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology": {
+        "coding":[
+            {
+                "system": "http://snomed.info/sct",
+                "code": "1162767002",
+                "display": "Squamous cell carcinoma (morphologic abnormality)"
+            }
+        ],
+        "text": "Epidermoid"
+    }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "Fracture (Distal femur)",
+    "identifier":[
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology": {
+        "coding":[
+            {
+                "system": "http://snomed.info/sct",
+                "code": "263232003",
+                "display": "Fracture of distal end of femur (disorder)"
+            }
+        ],
+        "text": "Fracture of distal femur"
+    }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "Fracture (Proximal tibia)",
+    "identifier":[
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology": {
+        "coding":[
+            {
+                "system": "http://snomed.info/sct",
+                "code": "20433007",
+                "display": "Fracture of upper end of tibia (disorder)"
+            }
+        ],
+        "text": "Fracture of the proximal tibia"
+    }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "Fracture (Patella)",
+    "identifier":[
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology": {
+        "coding":[
+            {
+                "system": "http://snomed.info/sct",
+                "code": "51037009",
+                "display": "Fracture of patella (disorder)"
+            }
+        ],
+        "text": "Fracture of the patella"
+    }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "Bone Marrow Edema subchondral (Medial femoral condyle)",
+    "identifier":[
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology":{
+        "coding":[
+            {
+                "system": "http://snomed.info/sct",
+                "code": "6411000179107",
+                "display": "Edema of bone marrow (disorder)"
+            }
+        ],
+        "text": "Bone marrow edema"
+    },
+    "location": { 
+        "coding":[
+            {
+                "system": "http://snomed.info/sct",
+                "code": "122474001",
+                "display": "Structure of medial condyle of femur (body structure)"
+            }
+        ],
+        "text": "Medial femoral condyle"
+    }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "Bone Marrow Edema circumscribed (Lateral femoral condyle)",
+    "identifier":[
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology":{
+        "coding":[
+            {
+                "system": "http://snomed.info/sct",
+                "code": "6411000179107",
+                "display": "Edema of bone marrow (disorder)"
+            }
+        ],
+        "text": "Bone marrow edema"
+    },
+    "location": { 
+        "coding":[
+            {
+                "system": "http://snomed.info/sct",
+                "code": "122475000",
+                "display": "Structure of lateral condyle of femur (body structure)"
+            }
+        ],
+        "text": "Lateral femoral condyle"
+    }
+},
+{
+    "resourceType":"BodyStructure",
+    "id": "Bone Marrow Edema diffuse (Patella)",
+    "identifier":[
+        {
+            "system": "http://philips.com/integrated-diagnostics/usage-context-type",
+            "value": "12345"
+        }
+    ],
+    "morphology":{
+        "coding":[
+            {
+                "system": "http://snomed.info/sct",
+                "code": "6411000179107",
+                "display": "Edema of bone marrow (disorder)"
+            }
+        ],
+        "text": "Bone marrow edema"
+    },
+    "location": { 
+        "coding":[
+            {
+                "system": "http://snomed.info/sct",
+                "code": "64234005",
+                "display": "Bone structure of patella (body structure)"
+            }
+        ],
+        "text": "Patella"
+    }
+}
