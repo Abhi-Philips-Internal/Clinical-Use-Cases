@@ -1,0 +1,890 @@
+{
+    "resourceType":"Patient",
+    "name": [
+        {
+            "use": "official",
+            "given": ["LAMA Leg Patient"],
+            "family": "ImageBiopsy Lab"
+        }
+    ],
+    "gender": "male",
+    "birthDate": "0000-00-00"
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final", 
+        "code":{
+            "coding":[
+                {
+                    "system":"http://snomed.info/sct",
+                    "code": "Mechanical Axis Devation", 
+                    "value": "Mechanical Axis Devation"
+                }
+            ],
+            "text": "Mechanical Axis Deviation - Right Leg"
+        },
+        "subject": {
+            "reference": "Patient/ImageBiopsy Lab"
+        },
+        "valueQuantity": {
+            "value": 25,
+            "unit": "mm",
+            "system": "http://unitofmeasure.org",
+            "code": "mm"
+        },
+        "bodySite":{
+            "coding":[
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "61685007:272741003=24028007"
+                }
+            ],
+            "text": "Right Leg"
+        }
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+            "coding":[
+                {
+                    "system":"http://snomed.info/sct",
+                    "code": "Mechanical Axis Devation", 
+                    "value": "Mechanical Axis Devation"
+                }
+            ],
+            "text": "Mechanical Axis Deviation - Left Leg"
+        },
+        "subject": {
+            "reference": "Patient/ImageBiopsy Lab"
+        },
+        "valueQuantity": {
+            "value": 22,
+            "unit": "mm",
+            "system": "http://unitofmeasure.org",
+            "code": "mm"
+        },
+        "bodySite":{
+            "coding":[
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "61685007:272741003=7771000"
+                }
+            ],
+            "text": "Left Leg"
+        }
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+            "coding": [
+                {
+                    "system":"http://snomed.info/sct",
+                    "code": "396551005", 
+                    "value": "Femur Length (observable entity)"
+                }
+            ], 
+            "text": "Femur length - right"
+        },
+        "subject": {
+            "reference": "Patient/ImageBiopsy Lab"
+        },
+        "valueQuantity": {
+            "value": 50.3,
+            "unit": "cm",
+            "system": "http://unitofmeasure.org",
+            "code": "cm"
+        }, 
+        "bodySite":{
+            "coding":[
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "71341001:272741003=24028007"
+                }
+            ],
+            "text": "Right Femur"
+        }
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final", 
+        "code": {
+            "coding": [
+                {
+                    "system":"http://snomed.info/sct",
+                    "code": "396551005", 
+                    "value": "Femur Length (observable entity)"
+                }
+            ], 
+            "text": "Femur length - left"
+        },
+        "subject": {
+            "reference": "Patient/ImageBiopsy Lab"
+        },
+        "valueQuantity": {
+            "value": 50.0,
+            "unit": "cm",
+            "system": "http://unitofmeasure.org",
+            "code": "cm"
+        },
+        "bodySite":{
+            "coding":[
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "71341001:272741003=7771000"
+                }
+            ],
+            "text": "Left Femur"
+        }
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final", 
+        "code": {
+            "coding": [
+                {
+                    "system":"http://snomed.info/sct",
+                    "code": "1003996007", 
+                    "value": "Tibia Length (observable entity)"
+                }
+            ], 
+            "text": "Tibia length - right"
+        },
+        "subject": {
+            "reference": "Patient/ImageBiopsy Lab"
+        },
+        "valueQuantity": {
+            "value": 39.2,
+            "unit": "cm",
+            "system": "http://unitofmeasure.org",
+            "code": "cm"
+        },
+        "bodySite":{
+            "coding":[
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "12611008:272741003=24028007"
+                }
+            ],
+            "text": "Right Tibia"
+        }
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final", 
+        "code": {
+            "coding": [
+                {
+                    "system":"http://snomed.info/sct",
+                    "code": "1003996007", 
+                    "value": "Tibia Length (observable entity)"
+                }
+            ], 
+            "text": "Tibia length - left"
+        },
+        "subject": {
+            "reference": "Patient/ImageBiopsy Lab"
+        },
+        "valueQuantity": {
+            "value": 39.6,
+            "unit": "cm",
+            "system": "http://unitofmeasure.org",
+            "code": "cm"
+        },
+        "bodySite":{
+            "coding":[
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "12611008:272741003=7771000"
+                }
+            ],
+            "text": "Left Tibia"
+        }         
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final", 
+        "code": {
+            "coding": [
+                {
+                    "system":"http://snomed.info/sct",
+                    "code": "249839000", 
+                    "value": "Leg Length (observable entity)"
+                }
+            ], 
+            "text": "Full Leg Length - right"
+        },
+        "subject": {
+            "reference": "Patient/ImageBiopsy Lab"
+        },
+        "valueQuantity": {
+            "value": 89.5,
+            "unit": "cm",
+            "system": "http://unitofmeasure.org",
+            "code": "cm"
+        },
+        "bodySite":{
+            "coding":[
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "61685007:272741003=24028007"
+                }
+            ],
+            "text": "Right Leg"
+        }
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final", 
+        "code": {
+            "coding": [
+                {
+                    "system":"http://snomed.info/sct",
+                    "code": "249839000", 
+                    "value": "Leg Length (observable entity)"
+                }
+            ], 
+            "text": "Full Leg Length - left"
+        },
+        "subject": {
+            "reference": "Patient/ImageBiopsy Lab"
+        },
+        "valueQuantity": {
+            "value": 89.6,
+            "unit": "cm",
+            "system": "http://unitofmeasure.org",
+            "code": "cm"
+        },
+        "bodySite":{
+            "coding":[
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "61685007:272741003=7771000"
+                }
+            ],
+            "text": "Left Leg"
+        }
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+            "coding": [
+                {
+                    "system":"http://snomed.info/sct",
+                    "code": "203601000", 
+                    "value": "Acquired unequal leg length (disorder)"
+                }
+            ], 
+            "text": "Right-Left Length Difference - Right"
+        },
+         "subject": {
+            "reference": "Patient/ImageBiopsy Lab"
+        },
+        "valueQuantity": {
+            "value": -0.1,
+            "unit": "cm",
+            "system": "http://unitofmeasure.org",
+            "code": "cm"
+        },
+        "bodySite":{
+            "coding":[
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "61685007:272741003=24028007"
+                }
+            ],
+            "text": "Right Leg"
+        }
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final",
+        "code": {
+            "coding": [
+                {
+                    "system":"http://snomed.info/sct",
+                    "code": "203601000", 
+                    "value": "Acquired unequal leg length (disorder)"
+                }
+            ], 
+            "text": "Right-Left Length Difference - Left"
+        },
+        "subject": {
+            "reference": "Patient/ImageBiopsy Lab"
+        },
+        "valueQuantity": {
+            "value": 0,
+            "unit": "cm",
+            "system": "http://unitofmeasure.org",
+            "code": "cm"
+        },
+        "bodySite":{
+            "coding":[
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "61685007:272741003=7771000"
+                }
+            ],
+            "text": "Left Leg"
+        }
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final", 
+        "code": {
+            "coding": [
+                {
+                    "system":"http://snomed.info/sct",
+                    "code": "temp", 
+                    "value": "Mechanical Lateral Proximal Femur Angle - Right"
+                }
+            ], 
+            "text": "mLPFA Mechanical Lateral Proximal Femur Angle - Right"
+        },
+        "subject": {
+            "reference": "Patient/ImageBiopsy Lab"
+        },
+        "valueQuantity": {
+            "value": 89,
+            "unit": "deg",
+            "system": "http://unitofmeasure.org",
+            "code": "deg"
+        },
+        "bodySite":{
+            "coding":[
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "71341001:272741003=24028007"
+                }
+            ],
+            "text": "Right Femur"
+        }
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final", 
+        "code": {
+            "coding": [
+                {
+                    "system":"http://snomed.info/sct",
+                    "code": "temp", 
+                    "value": "Mechanical Lateral Proximal Femur Angle - Left"
+                }
+            ], 
+            "text": "mLPFA Mechanical Lateral Proximal Femur Angle - Left"
+        },
+        "subject": {
+            "reference": "Patient/ImageBiopsy Lab"
+        },
+        "valueQuantity": {
+            "value": 87,
+            "unit": "deg",
+            "system": "http://unitofmeasure.org",
+            "code": "deg"
+        },
+        "bodySite":{
+            "coding":[
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "61685007:272741003=7771000"
+                }
+            ],
+            "text": "Left Leg"
+        }
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final", 
+        "code": {
+            "coding": [
+                {
+                    "system":"http://snomed.info/sct",
+                    "code": "temp", 
+                    "value": "Mechanical Lateral Distal Femur Angle - Right"
+                }
+            ], 
+            "text": "mLDFA Mechanical Lateral Distal Femur Angle - Right"
+        },
+        "subject": {
+            "reference": "Patient/ImageBiopsy Lab"
+        },
+        "valueQuantity": {
+            "value": 87,
+            "unit": "deg",
+            "system": "http://unitofmeasure.org",
+            "code": "deg"
+        },
+        "bodySite":{
+            "coding":[
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "71341001:272741003=24028007"
+                }
+            ],
+            "text": "Right Femur"
+        }
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final", 
+        "code": {
+            "coding": [
+                {
+                    "system":"http://snomed.info/sct",
+                    "code": "temp", 
+                    "value": "Mechanical Lateral Distal Femur Angle - Left"
+                }
+            ], 
+            "text": "mLDFA Mechanical Lateral Distal Femur Angle - Left"
+        },
+        "subject": {
+            "reference": "Patient/ImageBiopsy Lab"
+        },
+        "valueQuantity": {
+            "value": 87,
+            "unit": "deg",
+            "system": "http://unitofmeasure.org",
+            "code": "deg"
+        },
+        "bodySite":{
+            "coding":[
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "71341001:272741003=7771000"
+                }
+            ],
+            "text": "Left Femur"
+        }
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final", 
+        "code": {
+            "coding": [
+                {
+                    "system":"http://snomed.info/sct",
+                    "code": "temp", 
+                    "value": "JLCA Joint Line Convergence Angle - Right"
+                }
+            ], 
+            "text": "JLCA Joint Line Convergence Angle - Right"
+        },
+        "subject": {
+            "reference": "Patient/ImageBiopsy Lab"
+        },
+        "valueQuantity": {
+            "value": 2,
+            "unit": "deg",
+            "system": "http://unitofmeasure.org",
+            "code": "deg"
+        },
+        "bodySite":{
+            "coding":[
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "61685007:272741003=24028007"
+                }
+            ],
+            "text": "Right Leg"
+        }
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final", 
+        "code": {
+            "coding": [
+                {
+                    "system":"http://snomed.info/sct",
+                    "code": "temp", 
+                    "value": "JLCA Joint Line Convergence Angle - Left"
+                }
+            ], 
+            "text": "JLCA Joint Line Convergence Angle - Left"
+        },
+        "subject": {
+            "reference": "Patient/ImageBiopsy Lab"
+        },
+        "valueQuantity": {
+            "value": 2,
+            "unit": "deg",
+            "system": "http://unitofmeasure.org",
+            "code": "deg"
+        },
+        "bodySite":{
+            "coding":[
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "61685007:272741003=7771000"
+                }
+            ],
+            "text": "Left Leg"
+        },
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final", 
+        "code": {
+            "coding": [
+                {
+                    "system":"http://snomed.info/sct",
+                    "code": "temp", 
+                    "value": "Mechanical Medial Proximal Tibia Angle - Right"
+                }
+            ], 
+            "text": "mMPTA Mechanical Lateral Distal Femur Angle - Right"
+        },
+        "subject": {
+            "reference": "Patient/ImageBiopsy Lab"
+        },
+        "valueQuantity": {
+            "value": 82,
+            "unit": "deg",
+            "system": "http://unitofmeasure.org",
+            "code": "deg"
+        },
+        "bodySite":{
+            "coding":[
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "12611008:272741003=24028007"
+                }
+            ],
+            "text": "Right Tibia"
+        }
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final", 
+        "code": {
+            "coding": [
+                {
+                    "system":"http://snomed.info/sct",
+                    "code": "temp", 
+                    "value": "Mechanical Medial Proximal Tibia Angle - Left"
+                }
+            ], 
+            "text": "mMPTA Mechanical Lateral Distal Femur Angle - Left"
+        },
+        "subject": {
+            "reference": "Patient/ImageBiopsy Lab"
+        },
+        "valueQuantity": {
+            "value": 83,
+            "unit": "deg",
+            "system": "http://unitofmeasure.org",
+            "code": "deg"
+        },
+        "bodySite":{
+            "coding":[
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "12611008:272741003=7771000"
+                }
+            ],
+            "text": "Left Tibia"
+        }
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final", 
+        "code": {
+            "coding": [
+                {
+                    "system":"http://snomed.info/sct",
+                    "code": "temp", 
+                    "value": "Mechanical Medial Distal Tibia Angle - Right"
+                }
+            ], 
+            "text": "mLDTA Mechanical Medial Distal Tibia Angle - Right"
+        },
+        "subject": {
+            "reference": "Patient/ImageBiopsy Lab"
+        },
+        "valueQuantity": {
+            "value": 83,
+            "unit": "deg",
+            "system": "http://unitofmeasure.org",
+            "code": "deg"
+        },
+        "bodySite":{
+            "coding":[
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "12611008:272741003=24028007"
+                }
+            ],
+            "text": "Right Tibia"
+        }
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final", 
+        "code": {
+            "coding": [
+                {
+                    "system":"http://snomed.info/sct",
+                    "code": "temp", 
+                    "value": "Mechanical Medial Distal Tibia Angle - Left"
+                }
+            ], 
+            "text": "mLDTA Mechanical Medial Distal Tibia Angle - Left"
+        },
+        "subject": {
+            "reference": "Patient/ImageBiopsy Lab"
+        },
+        "valueQuantity": {
+            "value": 84,
+            "unit": "deg",
+            "system": "http://unitofmeasure.org",
+            "code": "deg"
+        },
+        "bodySite":{
+            "coding":[
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "12611008:272741003=7771000"
+                }
+            ],
+            "text": "Left Tibia"
+        }
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final", 
+        "code": {
+            "coding": [
+                {
+                    "system":"http://snomed.info/sct",
+                    "code": "temp", 
+                    "value": "Hip-Knee-Ankle Angle - Right"
+                }
+            ], 
+            "text": "HKA Hip-Knee-Ankle Angle - Right"
+        },
+        "subject": {
+            "reference": "Patient/ImageBiopsy Lab"
+        },
+        "valueQuantity": {
+            "value": 7,
+            "unit": "deg",
+            "system": "http://unitofmeasure.org",
+            "code": "deg"
+        },
+        "valueCodeableConcept": {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+				    "code": "261040005",
+				    "display": "Varus (qualifier value)"
+                }
+            ],
+            "text": "Right Hip-Knee-Ankle Angle - Varus"
+        }
+        "bodySite":{
+            "coding":[
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "61685007:272741003=24028007"
+                }
+            ],
+            "text": "Right Leg"
+        }
+    }
+},
+{
+    "request":{
+        "method": "PUT",
+        "url": "Observation?identifier=temp|Observation_..."
+    },
+    "fullurl": "urn.uuid:FHIR_MODEL_EXAMPLE_OBSERVATION_..",
+    "resource":{
+        "resourceType": "Observation",
+        "status": "final", 
+        "code": {
+            "coding": [
+                {
+                    "system":"http://snomed.info/sct",
+                    "code": "temp", 
+                    "value": "Hip-Knee-Ankle Angle - Left"
+                }
+            ], 
+            "text": "HKA Hip-Knee-Ankle Angle - Left"
+        },
+        "subject": {
+            "reference": "Patient/ImageBiopsy Lab"
+        },
+        "valueQuantity": {
+            "value": 6,
+            "unit": "deg",
+            "system": "http://unitofmeasure.org",
+            "code": "deg"
+        },
+        "valueCodeableConcept": {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+				    "code": "261040005",
+				    "display": "Varus (qualifier value)"
+                }
+            ],
+            "text": "Left Hip-Knee-Ankle Angle - Varus"
+        }
+        "bodySite":{
+            "coding":[
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "61685007:272741003=7771000"
+                }
+            ],
+            "text": "Left Leg"
+        }
+    }
+}
