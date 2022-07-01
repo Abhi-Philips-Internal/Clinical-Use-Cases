@@ -6322,7 +6322,7 @@
                     "display": "Malignant (qualifier value)"
                 }
             ],
-            "text": "Qualifier: Malignant"
+            "text": "Malignant"
         },
         "location": {
           "coding": [
